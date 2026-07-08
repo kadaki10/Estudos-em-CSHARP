@@ -12,3 +12,4 @@ C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\refint\Estudos C# .ne
 C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.pdb
 C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.genruntimeconfig.cache
 C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\ref\Estudos C# .net.dll
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.sourcelink.json
