@@ -1,0 +1,14 @@
+C:\Users\kadak\Documents\Estudos C# .net\bin\Debug\net10.0\Estudos C# .net.exe
+C:\Users\kadak\Documents\Estudos C# .net\bin\Debug\net10.0\Estudos C# .net.deps.json
+C:\Users\kadak\Documents\Estudos C# .net\bin\Debug\net10.0\Estudos C# .net.runtimeconfig.json
+C:\Users\kadak\Documents\Estudos C# .net\bin\Debug\net10.0\Estudos C# .net.dll
+C:\Users\kadak\Documents\Estudos C# .net\bin\Debug\net10.0\Estudos C# .net.pdb
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.AssemblyInfoInputs.cache
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.AssemblyInfo.cs
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.csproj.CoreCompileInputs.cache
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.dll
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\refint\Estudos C# .net.dll
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.pdb
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\Estudos C# .net.genruntimeconfig.cache
+C:\Users\kadak\Documents\Estudos C# .net\obj\Debug\net10.0\ref\Estudos C# .net.dll
