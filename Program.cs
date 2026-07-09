@@ -2,8 +2,18 @@
 using Estudos_C__.net.Models;
 
 
-DateTime dataAtual = DateTime.Now.AddDays(5);
-Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:MM"));
+int a = 10;
+int b = 20;
+
+int c = a + b;
+
+// c = c + 5; // 30 + 5
+
+//c += 5;
+
+// c = c - 5
+c *= 5;
+Console.WriteLine(c);
 
 
 
@@ -15,8 +25,8 @@ Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:MM"));
 
 
 
-
-
+// DateTime dataAtual = DateTime.Now.AddDays(5);
+// Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:MM"));
 
 
 
