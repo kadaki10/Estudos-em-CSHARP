@@ -1,15 +1,52 @@
 ﻿using System.Data.Common;
 using Estudos_C__.net.Models;
 
-string a = "15-1";
+int quantidadeEmEstoque = 10;
+int quantidadeCompra = 4;
+bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;
+
+
+Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
+
+if (possivelVenda)
+{
+    Console.WriteLine("Venda realizada com sucesso!");
+}
+else
+{
+    Console.WriteLine("Desculpe, não temos a quantidade em estoque.");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//string a = "15-1";
 
 //int b = 0;
 
-int.TryParse(a, out int b);
+// int.TryParse(a, out int b);
 
 
-Console.WriteLine(b);
-Console.WriteLine("Conversão realizada com sucesso!");
+//Console.WriteLine(b);
+//Console.WriteLine("Conversão realizada com sucesso!");
 
 
 
