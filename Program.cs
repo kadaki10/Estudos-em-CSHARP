@@ -1,19 +1,73 @@
 ﻿using System.Data.Common;
 using Estudos_C__.net.Models;
 
+string a = "15-1";
 
-int a = 10;
-int b = 20;
+//int b = 0;
 
-int c = a + b;
+int.TryParse(a, out int b);
 
-// c = c + 5; // 30 + 5
 
-//c += 5;
+Console.WriteLine(b);
+Console.WriteLine("Conversão realizada com sucesso!");
 
-// c = c - 5
-c *= 5;
-Console.WriteLine(c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Cast - Casting
+// int a = Convert.ToInt32("5");
+// int a = int.Parse("5c");
+
+// Console.WriteLine(a);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int a = 10;
+// int b = 20;
+
+// int c = a + b;
+
+// // c = c + 5; // 30 + 5
+
+// //c += 5;
+
+// // c = c - 5
+// c *= 5;
+// Console.WriteLine(c);
 
 
 
