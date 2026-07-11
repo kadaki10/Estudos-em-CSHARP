@@ -1,28 +1,23 @@
 ﻿using System.Data.Common;
 using Estudos_C__.net.Models;
 
-int quantidadeEmEstoque = 3;
-int quantidadeCompra = 4;
-bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
 
 
-Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
-Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
-Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
-
-
-if (quantidadeCompra == 0)
+switch (letra)
 {
-    Console.WriteLine("Venda invalida!");
-}
-
-else if (possivelVenda)
-{
-    Console.WriteLine("Venda realizada!");
-}
-else
-{
-    Console.WriteLine("Desculpe, não temos a quantidade em estoque.");
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Vogal");
+        break;
+    
+    default:
+        Console.WriteLine("Não é vogal");
+        break;
 }
 
 
@@ -40,6 +35,40 @@ else
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// int quantidadeEmEstoque = 3;
+// int quantidadeCompra = 4;
+// bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
+
+
+// Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+// Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+// Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
+
+
+// if (quantidadeCompra == 0)
+// {
+//     Console.WriteLine("Venda invalida!");
+// }
+
+// else if (possivelVenda)
+// {
+//     Console.WriteLine("Venda realizada!");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe, não temos a quantidade em estoque.");
+// }
 
 
 
