@@ -2,17 +2,16 @@
 using Estudos_C__.net.Models;
 
 
+bool choveu = false;
+bool estaTarde = false;
 
-bool possuiPresencaMinima = true;
-double media = 7.5;
-
-if (possuiPresencaMinima && media >= 7)
+if (!choveu && !estaTarde)
 {
-    Console.WriteLine("Aprovado!");
+    Console.WriteLine("Vou pedalar de bike!");
 }
 else
 {
-    Console.WriteLine("Reprovado");
+    Console.WriteLine("Vou ficar em casa.");
 }
 
 
@@ -31,6 +30,27 @@ else
 
 
 
+
+
+
+
+
+
+
+
+
+
+// bool possuiPresencaMinima = true;
+// double media = 7.5;
+
+// if (possuiPresencaMinima && media >= 7)
+// {
+//     Console.WriteLine("Aprovado!");
+// }
+// else
+// {
+//     Console.WriteLine("Reprovado");
+// }
 
 
 
