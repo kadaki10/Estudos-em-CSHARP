@@ -1,18 +1,12 @@
 ﻿using System.Data.Common;
 using Estudos_C__.net.Models;
 
+Calculadora calc = new Calculadora();
 
-bool choveu = false;
-bool estaTarde = false;
-
-if (!choveu && !estaTarde)
-{
-    Console.WriteLine("Vou pedalar de bike!");
-}
-else
-{
-    Console.WriteLine("Vou ficar em casa.");
-}
+calc.Somar(10, 30);
+calc.Subtrair(10, 50);
+calc.Multiplicar(15, 45);
+calc.Dividir(2, 2);
 
 
 
@@ -35,8 +29,17 @@ else
 
 
 
+// bool choveu = false;
+// bool estaTarde = true;
 
-
+// if (!choveu && !estaTarde)
+// {
+//     Console.WriteLine("Vou pedalar de bike!");
+// }
+// else
+// {
+//     Console.WriteLine("Vou ficar em casa.");
+// }
 
 
 
