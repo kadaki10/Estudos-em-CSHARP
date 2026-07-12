@@ -3,7 +3,8 @@ using Estudos_C__.net.Models;
 
 Calculadora calc = new Calculadora();
 
-calc.Potencia(3, 3);
+//calc.Potencia(3, 3);
+calc.Tangente(30);
 
 
 
