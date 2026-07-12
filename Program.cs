@@ -1,22 +1,14 @@
 ﻿using System.Data.Common;
 using Estudos_C__.net.Models;
 
-Calculadora calc = new Calculadora();
+int numero = 5;
+int contador = 0;
 
-int numeroIncremento = 10;
-
-Console.WriteLine(numeroIncremento);
-
-Console.WriteLine("Incrementando o 10");
-// numero = numero + 1;
-numeroIncremento++;
-
-int numeroDecremento = 20;
-
-Console.WriteLine("Decrementando o 20");
-numeroDecremento--;
-
-Console.WriteLine(numeroDecremento);
+while(contador <= 10)
+{
+    Console.WriteLine($"{contador}° Execução: {numero} x {contador} = {numero * contador}");
+    contador++;
+}
 
 
 
@@ -40,6 +32,32 @@ Console.WriteLine(numeroDecremento);
 
 
 
+
+
+
+
+
+
+// for(int contador = 0; contador <= 10; contador++)
+// {
+//     Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+// }
+
+
+// int numeroIncremento = 10;
+
+// Console.WriteLine(numeroIncremento);
+
+// Console.WriteLine("Incrementando o 10");
+// // numero = numero + 1;
+// numeroIncremento++;
+
+// int numeroDecremento = 20;
+
+// Console.WriteLine("Decrementando o 20");
+// numeroDecremento--;
+
+// Console.WriteLine(numeroDecremento);
 
 // calc.Potencia(3, 3);
 // calc.Tangente(30);
