@@ -1,24 +1,22 @@
 ﻿using System.Data.Common;
 using Estudos_C__.net.Models;
 
+List<string> listaString = new List<string>();
 
-int[] arrayInteiros = new int[4];
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+listaString.Add("RJ");
 
-arrayInteiros[0] = 72;
-arrayInteiros[1] = 64;
-arrayInteiros[2] = 50;
-arrayInteiros[3] = 1;
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
-int[] arrayInteirosDobrado =  new int[arrayInteiros.Length * 2];
-Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+listaString.Add("SC");
 
-// Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
-Console.WriteLine("Percorrendo o ARRAY com o FOR");
-for(int contador = 0; contador < arrayInteiros.Length; contador++)
-{
-    Console.WriteLine($"Posição N° {contador} - {arrayInteiros[contador]}");
-}
+listaString.Remove("MG");
+
+Console.WriteLine($"Itens da minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
 
 
@@ -31,6 +29,38 @@ for(int contador = 0; contador < arrayInteiros.Length; contador++)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int[] arrayInteiros = new int[4];
+
+// arrayInteiros[0] = 72;
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
+// arrayInteiros[3] = 1;
+
+// int[] arrayInteirosDobrado =  new int[arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+// // Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+// Console.WriteLine("Percorrendo o ARRAY com o FOR");
+// for(int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posição N° {contador} - {arrayInteiros[contador]}");
+// }
 
 
 // Console.WriteLine("Percorrendo o ARRAY com o FOREACH");
