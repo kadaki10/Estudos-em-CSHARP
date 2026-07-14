@@ -1,24 +1,9 @@
-﻿using System.Data.Common;
-using Estudos_C__.net.Models;
+﻿using Estudos_C__.net.Models;
 
-List<string> listaString = new List<string>();
-
-listaString.Add("SP");
-listaString.Add("BA");
-listaString.Add("MG");
-listaString.Add("RJ");
-
-Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
-
-listaString.Add("SC");
-
-Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
-
-listaString.Remove("MG");
-
-Console.WriteLine($"Itens da minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
-
-
+Pessoa p1 = new Pessoa();
+p1.Nome = "kadaki";
+p1.Idade = "29";
+p1.Apresentar();
 
 
 

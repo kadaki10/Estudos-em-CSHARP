@@ -9,5 +9,10 @@ namespace Estudos_C__.net.Models
     {
         public string Nome { get; set; }
         public string Idade { get; set; }
+
+        public void Apresentar()
+        {
+            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}");
+        }
     }
 }
