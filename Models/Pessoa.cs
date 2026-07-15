@@ -8,6 +8,16 @@ namespace Estudos_C__.net.Models
 {
     public class Pessoa
     {
+
+        public Pessoa()
+        {
+        
+        }
+
+        public Pessoa(string nome, string sobrenome)
+        {
+            
+        }
         private string _nome;
         private int _idade;   // <-- faltava isso
 
