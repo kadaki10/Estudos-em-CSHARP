@@ -1,9 +1,20 @@
 ﻿using Estudos_C__.net.Models;
 
 Pessoa p1 = new Pessoa();
-p1.Nome = "kadaki";
-p1.Idade = 29;
-p1.Apresentar();
+p1.Nome = "Reinaldo";
+p1.Sobrenome = "Moraes";
+
+Pessoa p2 = new Pessoa();
+p2.Nome = "Kadaki";
+p2.Sobrenome = "King";
+
+Curso CursoDeIngles = new Curso();
+CursoDeIngles.Nome = "Ingles";
+CursoDeIngles.Alunos = new List<Pessoa>();
+
+CursoDeIngles.AdicionarAluno(p1);
+CursoDeIngles.AdicionarAluno(p2);
+CursoDeIngles.ListarAlunos();
 
 
 
@@ -27,6 +38,13 @@ p1.Apresentar();
 
 
 
+
+
+
+// Pessoa p1 = new Pessoa();
+// p1.Nome = "kadaki";
+// p1.Idade = 29;
+// p1.Apresentar();
 
 
 // int[] arrayInteiros = new int[4];
