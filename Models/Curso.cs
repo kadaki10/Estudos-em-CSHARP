@@ -12,7 +12,18 @@ namespace Estudos_C__.net.Models
 
         public void AdicionarAluno(Pessoa aluno)
         {
-            Alunos.Add(Aluno); 
+            Alunos.Add(aluno); 
+        }
+
+        public int ObterQuantidadeDeAlunosMatriculados()
+        {
+            int quantidade = Alunos.Count;
+            return quantidade;
+        }
+
+        public bool RemoverAluno(Pessoa aluno)
+        {
+            return Alunos.Remove(aluno);
         }
     }
 }
