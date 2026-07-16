@@ -28,10 +28,13 @@ namespace Estudos_C__.net.Models
 
         public void ListarAlunos()
         {
-            Console.WriteLine($"Alunos do curso de: {Nome}");
-            foreach (Pessoa aluno in Alunos)
+            Console.WriteLine($"Alunos do curso: {Nome}");
+
+            for (int count = 0; count < Alunos.Count; count++)
             {
-                Console.WriteLine(aluno.NomeCompleto);
+                //string texto = "N°" + count + " - " + Alunos[count].NomeCompleto;
+                string texto = $"N° {count + 1} - {Alunos[count].NomeCompleto}";
+                Console.WriteLine(texto);
             }
         }
     }

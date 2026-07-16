@@ -1,21 +1,19 @@
-﻿using Estudos_C__.net.Models;
+﻿using System.ComponentModel;
+using Estudos_C__.net.Models;
+using System.Globalization;
 
-Pessoa p1 = new Pessoa();
-p1.Nome = "Reinaldo";
-p1.Sobrenome = "Moraes";
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
-Pessoa p2 = new Pessoa();
-p2.Nome = "Kadaki";
-p2.Sobrenome = "King";
+decimal valorMonetario = 1582.40M;
 
-Curso CursoDeIngles = new Curso();
-CursoDeIngles.Nome = "Ingles";
-CursoDeIngles.Alunos = new List<Pessoa>();
+Console.WriteLine(valorMonetario.ToString("N2"));
 
-CursoDeIngles.AdicionarAluno(p1);
-CursoDeIngles.AdicionarAluno(p2);
-CursoDeIngles.ListarAlunos();
+double porcentagem = .3421;
 
+Console.WriteLine(porcentagem.ToString("P"));
+
+int numero = 123456;
+Console.WriteLine(numero.ToString("##-##-##"));
 
 
 
@@ -40,6 +38,24 @@ CursoDeIngles.ListarAlunos();
 
 
 
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa(nome: "Leonardo", sobrenome: "Buta");
+// Pessoa p2 = new Pessoa(nome: "Eduardo", sobrenome: "Neves Queiroz");
+
+// Curso CursoDeIngles = new Curso();
+// CursoDeIngles.Nome = "Ingles";
+// CursoDeIngles.Alunos = new List<Pessoa>();
+
+// CursoDeIngles.AdicionarAluno(p1);
+// CursoDeIngles.AdicionarAluno(p2);
+// CursoDeIngles.ListarAlunos();
 
 // Pessoa p1 = new Pessoa();
 // p1.Nome = "kadaki";
