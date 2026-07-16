@@ -2,18 +2,9 @@
 using Estudos_C__.net.Models;
 using System.Globalization;
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+DateTime data = DateTime.Parse("32/04/2022 18:00");
 
-decimal valorMonetario = 1582.40M;
-
-Console.WriteLine(valorMonetario.ToString("N2"));
-
-double porcentagem = .3421;
-
-Console.WriteLine(porcentagem.ToString("P"));
-
-int numero = 123456;
-Console.WriteLine(numero.ToString("##-##-##"));
+Console.WriteLine(data);
 
 
 
@@ -42,8 +33,18 @@ Console.WriteLine(numero.ToString("##-##-##"));
 
 
 
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
+// decimal valorMonetario = 1582.40M;
 
+// Console.WriteLine(valorMonetario.ToString("N2"));
+
+// double porcentagem = .3421;
+
+// Console.WriteLine(porcentagem.ToString("P"));
+
+// int numero = 123456;
+// Console.WriteLine(numero.ToString("##-##-##"));
 
 
 // Pessoa p1 = new Pessoa(nome: "Leonardo", sobrenome: "Buta");
