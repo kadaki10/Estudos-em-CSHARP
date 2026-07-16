@@ -2,7 +2,9 @@
 using Estudos_C__.net.Models;
 using System.Globalization;
 
-DateTime data = DateTime.Parse("32/04/2022 18:00");
+string dataString = "2022-04-17 18:00";
+
+DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
 
 Console.WriteLine(data);
 
@@ -32,6 +34,16 @@ Console.WriteLine(data);
 
 
 
+
+
+
+
+
+
+
+// DateTime data = DateTime.Parse("32/04/2022 18:00");
+
+// Console.WriteLine(data);
 
 // CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
