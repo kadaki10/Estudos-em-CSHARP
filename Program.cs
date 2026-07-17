@@ -2,36 +2,34 @@
 using Estudos_C__.net.Models;
 using System.Globalization;
 
-string dataString = "2022-04-17 18:00";
-
-DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
-
-Console.WriteLine(data);
+//string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+//Console.WriteLine("Chegou até aqui");
 
 
+try
+{
+    string[] linhas = File.ReadAllLines("Arquivos/d/arquivo_Leitura.txt");
+
+    foreach(string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+} 
+catch(FileNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+}
+catch(DirectoryNotFoundException ex)
+{
+    Console.WriteLine("Ocorreu um erro na leitura do arquivo. Caminho da pasta não encontrado. " + ex.Message);
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Ocorreu uma exceção generica. {ex.Message}");
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Console.WriteLine("Chegou até aqui");
 
 
 
@@ -40,6 +38,51 @@ Console.WriteLine(data);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// string dataString = "2022-04-17 18:00";
+
+// bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+
+// if (sucesso)
+// {
+//     Console.WriteLine($"Conversão com sucesso! Data: {data}");
+// }
+
+// else
+// {
+//     Console.WriteLine($"{dataString} não é uma data valida!");
+// }
 
 // DateTime data = DateTime.Parse("32/04/2022 18:00");
 
