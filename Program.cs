@@ -1,8 +1,26 @@
 ﻿using System.ComponentModel;
 using Estudos_C__.net.Models;
 using System.Globalization;
+using System.Runtime.CompilerServices;
 
+Queue<int> fila = new Queue<int>();
 
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(6);
+fila.Enqueue(8);
+
+foreach(int item in fila)
+{
+    Console.WriteLine(item);
+}
+
+Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+
+foreach(int item in fila)
+{
+    Console.WriteLine(item);
+}
 
 
 
