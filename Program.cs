@@ -1,23 +1,22 @@
 ﻿using System.ComponentModel;
 using Estudos_C__.net.Models;
 using System.Globalization;
-using System.Runtime.CompilerServices;
 
-Queue<int> fila = new Queue<int>();
+Stack<int> pilha = new Stack<int>();
 
-fila.Enqueue(2);
-fila.Enqueue(4);
-fila.Enqueue(6);
-fila.Enqueue(8);
+pilha.Push(4);
+pilha.Push(6);
+pilha.Push(8);
+pilha.Push(10);
 
-foreach(int item in fila)
+foreach(int item in pilha)
 {
     Console.WriteLine(item);
 }
 
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+Console.WriteLine($"Removendo o item da pilha {pilha.Pop()}");
 
-foreach(int item in fila)
+foreach(int item in pilha)
 {
     Console.WriteLine(item);
 }
@@ -53,16 +52,24 @@ foreach(int item in fila)
 
 
 
+// Queue<int> fila = new Queue<int>();
 
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
 
+// foreach(int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
 
-
-
-
-
-
-
+// foreach(int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
 //string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 //Console.WriteLine("Chegou até aqui");
