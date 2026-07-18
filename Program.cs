@@ -2,24 +2,18 @@
 using Estudos_C__.net.Models;
 using System.Globalization;
 
-Stack<int> pilha = new Stack<int>();
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
+estados.Add("SP", "São paulo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas gerais");
 
-foreach(int item in pilha)
+foreach(var item in estados)
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
 
-Console.WriteLine($"Removendo o item da pilha {pilha.Pop()}");
-
-foreach(int item in pilha)
-{
-    Console.WriteLine(item);
-}
+estados.Add("BA2", "Bahia");
 
 
 
@@ -43,14 +37,24 @@ foreach(int item in pilha)
 
 
 
+// Stack<int> pilha = new Stack<int>();
 
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
 
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
+// Console.WriteLine($"Removendo o item da pilha {pilha.Pop()}");
 
-
-
-
-
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 // Queue<int> fila = new Queue<int>();
 
