@@ -41,6 +41,14 @@ namespace Colecoes.Helper
             Array.Copy(array, arrayDestino, array.Length);
         }
 
-        public bool
+        public bool Existe(int[] array, int valor)
+        {
+            return Array.Exists(array, elemento => elemento == valor);
+        }
+
+        public bool TodosMaiorQue(int[] array, int valor)
+        {
+            return Array.TrueForAll(array, elemento => elemento > valor);
+        }
     }
 }
