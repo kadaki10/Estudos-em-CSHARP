@@ -7,6 +7,7 @@ C:\Users\kadak\Documents\Estudos C# .net\Colecoes\obj\Debug\net10.0\Colecoes.Gen
 C:\Users\kadak\Documents\Estudos C# .net\Colecoes\obj\Debug\net10.0\Colecoes.AssemblyInfoInputs.cache
 C:\Users\kadak\Documents\Estudos C# .net\Colecoes\obj\Debug\net10.0\Colecoes.AssemblyInfo.cs
 C:\Users\kadak\Documents\Estudos C# .net\Colecoes\obj\Debug\net10.0\Colecoes.csproj.CoreCompileInputs.cache
+C:\Users\kadak\Documents\Estudos C# .net\Colecoes\obj\Debug\net10.0\Colecoes.sourcelink.json
 C:\Users\kadak\Documents\Estudos C# .net\Colecoes\obj\Debug\net10.0\Colecoes.dll
 C:\Users\kadak\Documents\Estudos C# .net\Colecoes\obj\Debug\net10.0\refint\Colecoes.dll
 C:\Users\kadak\Documents\Estudos C# .net\Colecoes\obj\Debug\net10.0\Colecoes.pdb
