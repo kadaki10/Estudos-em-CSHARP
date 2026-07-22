@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -54,6 +55,11 @@ namespace Colecoes.Helper
         public int ObterValor(int[] array, int valor)
         {
             return Array.Find(array, elemento => elemento == valor);
+        }
+
+        public int ObterIndice(int[] array, int valor)
+        {
+            return Array.IndexOf(array, valor);
         }
     }
 }
