@@ -10,21 +10,28 @@ namespace Colecoes
 
             int[] array = new int[5] {6, 3, 8, 1, 9};
             int[] arrayCopia = new int[10];
+            string[] arrayString = op.ConverterParaArrayString(array);
 
-            int valorProcurado = 8;
+            //int valorProcurado = 8;
 
-            int indice = op.ObterIndice(array, valorProcurado);
+            System.Console.WriteLine($"Capacidade atual do array: {array.Length}");
 
-            if(indice > -1)
-            {
-                System.Console.WriteLine($"O indice do elemento {valorProcurado} é: {indice}");
-            }
-            else
-            {
-                System.Console.WriteLine("Valor inexistente do array");
-            }
+            op.RedimensionarArray(ref array, array.Length * 2);
+
+            System.Console.WriteLine($"Capacidade atual do Array após redimensionar: {array.Length} ");
 
 
+
+            // int indice = op.ObterIndice(array, valorProcurado);
+
+            // if(indice > -1)
+            // {
+            //     System.Console.WriteLine($"O indice do elemento {valorProcurado} é: {indice}");
+            // }
+            // else
+            // {
+            //     System.Console.WriteLine("Valor inexistente do array");
+            // }
 
             // int valorAchado = op.ObterValor(array, valorProcurado);
 
