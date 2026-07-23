@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using Colecoes.Helper;
 
 namespace Colecoes
@@ -6,19 +7,56 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            Stack<string> pilhaLivros = new Stack<string>();
+            
+            int[] arrayNumeros = new int[5] { 1, 4, 8, 15, 19};
 
-            pilhaLivros.Push(".NET");
-            pilhaLivros.Push("DDD");
-            pilhaLivros.Push("Código limpo");
+            var numeroParesQuery = 
+                    from num in arrayNumeros
+                    where num % 2 == 0
+                    orderby num
+                    select num;
 
-            while (pilhaLivros.Count > 0)
-            {
-                System.Console.WriteLine($"Proximo livro pra leitura: {pilhaLivros.Peek()}");
-                System.Console.WriteLine($"{pilhaLivros.Pop()} lido com sucesso");
-            }
+            var numerosParesMetodo = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
 
-            System.Console.WriteLine($"Livros para leitura: {pilhaLivros.Count}");
+            System.Console.WriteLine("Números pares Query: " + string.Join(", ", numeroParesQuery));
+            System.Console.WriteLine("Números pares Metodo: " + string.Join(", ", numerosParesMetodo));
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            // Stack<string> pilhaLivros = new Stack<string>();
+
+            // pilhaLivros.Push(".NET");
+            // pilhaLivros.Push("DDD");
+            // pilhaLivros.Push("Código limpo");
+
+            // while (pilhaLivros.Count > 0)
+            // {
+            //     System.Console.WriteLine($"Proximo livro pra leitura: {pilhaLivros.Peek()}");
+            //     System.Console.WriteLine($"{pilhaLivros.Pop()} lido com sucesso");
+            // }
+
+            // System.Console.WriteLine($"Livros para leitura: {pilhaLivros.Count}");
             // OperacoesArray op = new OperacoesArray();
 
             // int[] array = new int[5] {6, 3, 8, 1, 9};
