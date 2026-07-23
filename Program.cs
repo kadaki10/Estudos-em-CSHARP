@@ -7,42 +7,42 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            
-            int[] arrayNumeros = new int[5] { 1, 4, 8, 15, 19};
+            int[] arrayNumeros = new int[7] { 10, 20, 4, 3, 5, 100, 7}
 
-            var numeroParesQuery = 
-                    from num in arrayNumeros
-                    where num % 2 == 0
-                    orderby num
-                    select num;
+            var minimo = arrayNumeros.Min();
+            var maximo = arrayNumeros.Max();
+            var medio = arrayNumeros.Average();
 
-            var numerosParesMetodo = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
+            System.Console.WriteLine($"Minimo: {minimo}");
+            System.Console.WriteLine($"maximo: {maximo}");
+            System.Console.WriteLine($"medio: {medio}");
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            // int[] arrayNumeros = new int[5] { 1, 4, 8, 15, 19};
 
-            System.Console.WriteLine("Números pares Query: " + string.Join(", ", numeroParesQuery));
-            System.Console.WriteLine("Números pares Metodo: " + string.Join(", ", numerosParesMetodo));
-        
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            // var numeroParesQuery = 
+            //         from num in arrayNumeros
+            //         where num % 2 == 0
+            //         orderby num
+            //         select num;
+
+            // var numerosParesMetodo = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
+
+            // System.Console.WriteLine("Números pares Query: " + string.Join(", ", numeroParesQuery));
+            // System.Console.WriteLine("Números pares Metodo: " + string.Join(", ", numerosParesMetodo));
+    
             
             // Stack<string> pilhaLivros = new Stack<string>();
 
