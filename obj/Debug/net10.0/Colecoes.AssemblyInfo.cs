@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Colecoes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b048353c9bb3bfe57178f0349f362e589d85ba8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a859bb86c19bb768d3d0eb746aaf265cb64b1d1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Colecoes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Colecoes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

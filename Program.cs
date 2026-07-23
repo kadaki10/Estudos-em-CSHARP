@@ -6,21 +6,32 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            OperacoesArray op = new OperacoesArray();
+            Stack<string> pilhaLivros = new Stack<string>();
 
-            int[] array = new int[5] {6, 3, 8, 1, 9};
-            int[] arrayCopia = new int[10];
-            string[] arrayString = op.ConverterParaArrayString(array);
+            pilhaLivros.Push(".NET");
+            pilhaLivros.Push("DDD");
+            pilhaLivros.Push("Código limpo");
 
-            //int valorProcurado = 8;
+            while (pilhaLivros.Count > 0)
+            {
+                System.Console.WriteLine($"Proximo livro pra leitura: {pilhaLivros.Peek()}");
+                System.Console.WriteLine($"{pilhaLivros.Pop()} lido com sucesso");
+            }
 
-            System.Console.WriteLine($"Capacidade atual do array: {array.Length}");
+            System.Console.WriteLine($"Livros para leitura: {pilhaLivros.Count}");
+            // OperacoesArray op = new OperacoesArray();
 
-            op.RedimensionarArray(ref array, array.Length * 2);
+            // int[] array = new int[5] {6, 3, 8, 1, 9};
+            // int[] arrayCopia = new int[10];
+            // string[] arrayString = op.ConverterParaArrayString(array);
 
-            System.Console.WriteLine($"Capacidade atual do Array após redimensionar: {array.Length} ");
+            // //int valorProcurado = 8;
 
+            // System.Console.WriteLine($"Capacidade atual do array: {array.Length}");
 
+            // op.RedimensionarArray(ref array, array.Length * 2);
+
+            // System.Console.WriteLine($"Capacidade atual do Array após redimensionar: {array.Length} ");
 
             // int indice = op.ObterIndice(array, valorProcurado);
 
