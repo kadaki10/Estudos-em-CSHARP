@@ -7,15 +7,21 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            int[] arrayNumeros = new int[7] { 10, 20, 4, 3, 5, 100, 7}
+            int[] arrayNumeros = new int[10] { 10, 20, 4, 3, 5, 100, 7, 100, 20, 1};
 
             var minimo = arrayNumeros.Min();
             var maximo = arrayNumeros.Max();
             var medio = arrayNumeros.Average();
+            var soma = arrayNumeros.Sum();
+            var arrayUnico = arrayNumeros.Distinct().ToArray();
 
             System.Console.WriteLine($"Minimo: {minimo}");
             System.Console.WriteLine($"maximo: {maximo}");
             System.Console.WriteLine($"medio: {medio}");
+            System.Console.WriteLine($"Soma: {soma}");
+            System.Console.WriteLine($"Array original: {string.Join(", ", arrayNumeros)}");
+            System.Console.WriteLine($"Array distinto: {string.Join(", ", arrayUnico)}");
+            
             
             
             
